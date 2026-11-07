@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Information</title>
+</head>
+<body>
+    <h2>Student Details</h2>
+    <p id="display"></p>
+
+    <script>
+        let studentName = "Karthik";
+        let studentAge = 21;
+        const course = "MCA";
+        let passed = true;
+        let percentage;
+        let city = null;
+
+        let output = "";
+
+        output += "Student Name: " + studentName +
+                  " | Type: " + typeof studentName + "<br>";
+
+        output += "Age: " + studentAge +
+                  " | Type: " + typeof studentAge + "<br>";
+
+        output += "Course: " + course +
+                  " | Type: " + typeof course + "<br>";
+
+        output += "Passed: " + passed +
+                  " | Type: " + typeof passed + "<br>";
+
+        output += "Percentage: " + percentage +
+                  " | Type: " + typeof percentage + "<br>";
+
+        output += "City: " + city +
+                  " | Type: " + typeof city + "<br>";
+
+        document.getElementById("display").innerHTML = output;
+    </script>
+</body>
+</html>
