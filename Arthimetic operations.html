@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator Demonstration</title>
+</head>
+<body>
+    <h2>JavaScript Operators</h2>
+    <p id="result"></p>
+
+    <script>
+        let x = 15;
+        let y = 4;
+        let output = "";
+
+        output += "x = " + x + ", y = " + y + "<br><br>";
+
+        output += "<b>Arithmetic Operators</b><br>";
+        output += "Addition: " + (x + y) + "<br>";
+        output += "Subtraction: " + (x - y) + "<br>";
+        output += "Multiplication: " + (x * y) + "<br>";
+        output += "Division: " + (x / y).toFixed(2) + "<br>";
+        output += "Remainder: " + (x % y) + "<br>";
+        output += "Exponentiation: " + (x ** y) + "<br><br>";
+
+        output += "<b>Comparison Operators</b><br>";
+        output += "x is greater than y: " + (x > y) + "<br>";
+        output += "x equals '15': " + (x == "15") + "<br>";
+        output += "x strictly equals '15': " + (x === "15") + "<br><br>";
+
+        output += "<b>Logical Operators</b><br>";
+        output += "(x > 10 && y < 5): " +
+                  (x > 10 && y < 5) + "<br>";
+
+        output += "(x < 10 || y < 5): " +
+                  (x < 10 || y < 5) + "<br>";
+
+        output += "!(x > y): " + !(x > y);
+
+        document.getElementById("result").innerHTML = output;
+    </script>
+</body>
+</html>
